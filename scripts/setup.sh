@@ -21,3 +21,15 @@ mkdir -p x-img-diff/build
     cmake ..
     make
 )
+
+#
+git clone https://github.com/sUeharaE4/shift_modify_detector.git
+
+mamba install conda mamba --yes
+mamba create -n opencv --yes
+mamba install -n opencv -c conda-forge opencv tqdm pyyaml numpy pandas pdf2image poppler pillow --yes
+conda activate opencv
+
+cd shift_modify_detector
+cd src
+python shift_modification.py
