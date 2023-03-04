@@ -39,3 +39,7 @@ bash diffpdf.sh <出力ファイル名(PDF)>
 ```bash
 bash diffpdf.sh protocols.pdf
 ```
+
+## 謝辞:pray:
+
+- sUeharaE4さんの[`shift_modify_detector`](https://github.com/sUeharaE4/shift_modify_detector)を利用させていただきました。素晴らしいツールをありがとうございました。
