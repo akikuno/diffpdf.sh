@@ -53,8 +53,8 @@ find data/ -type f |
         echo "$output" を処理中です... | tee -a "$log"
         mkdir -p data/tmp_image data/tmp_output
         # PDFを1枚ずつJPEGに変換
-        python scripts/convert_pdf_to_image.py "$pdf1" "template"
-        python scripts/convert_pdf_to_image.py "$pdf2" "target"
+        python src/convert_pdf_to_image.py "$pdf1" "template"
+        python src/convert_pdf_to_image.py "$pdf2" "target"
         # JPEG1枚ずつをペアで比較
         find data/tmp_image/ -type f |
             sort |
@@ -82,7 +82,7 @@ find data/ -type f |
         rm -rf data/tmp_image
     done
 
-python scripts/jpeg_to_pdf.py "reports/$output_pdf"
+python src/jpeg_to_pdf.py "reports/$output_pdf"
 
 rm -rf data/tmp_output
 
