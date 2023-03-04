@@ -5,6 +5,11 @@
 - `data`ディレクトリにあるすべてのPDFに対して、2枚ずつ差分を比較します
 - `reports`に1枚のPDFファイルとして、差分を比較した結果を出力します。
 
+## 事前に必要なもの
+
+- `bash`
+- `conda`
+
 ## セットアップ
 
 ```bash
@@ -29,7 +34,7 @@ git clone https://github.com/sUeharaE4/shift_modify_detector.git
 bash detect_diff.sh <出力ファイル名(PDF)>
 ```
 
-- 以下の例ですと`reports/protocols.pdf`が結果です
+- 以下の例ですと`reports/protocols.pdf`が結果として出力されます
 
 ```bash
 bash detect_diff.sh protocols.pdf

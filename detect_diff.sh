@@ -2,7 +2,10 @@
 
 output_pdf="$1"
 
-[ -z "$output_pdf" ] && echo "ERROR: 出力するPDF名を入力してください" && exit 1
+if [ -z "$output_pdf" ]; then
+    echo "ERROR: 出力するPDF名を入力してください"
+    exit 1
+fi
 
 # もし拡張子にPDFがついていなかったら.pdfをつける
 (echo "$output_pdf" | grep -q ".pdf") || output_pdf="$output_pdf".pdf
