@@ -16,7 +16,6 @@
 ```bash
 type mamba >/dev/null 2>&1 || conda install mamba --yes
 mamba update conda mamba --yes
-mamba create --yes
 mamba install -c conda-forge git opencv tqdm pyyaml numpy pandas img2pdf pdf2image poppler pillow --yes
 git clone https://github.com/sUeharaE4/shift_modify_detector.git
 ```
