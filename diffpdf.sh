@@ -1,9 +1,6 @@
 #!/bin/bash
 
-. scripts/switch_conda_env.sh diffpdf
-
-# conda info -e | grep '\*' | awk '{print $1}'
-# exit 0
+. src/switch_conda_env.sh diffpdf
 
 output_pdf="$1"
 
